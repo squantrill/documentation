@@ -27,4 +27,7 @@ If you want to improve an existing translation there are mainly two things you w
 
 ## Publishing A Translation
 
-You can publish your finished translation file at http://forum.kimai.org/index.php?board=11.0 or even better, create a pull request https://github.com/kimai/kimai/pulls.
+You can publish your finished translation file at:
+http://forum.kimai.org/index.php?board=11.0
+
+Or even better, create a pull request and we include it in the official release: https://github.com/kimai/kimai/pulls
