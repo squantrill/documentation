@@ -10,3 +10,10 @@ We use Markdown to write the documentation and the great [GitbookIO](https://git
 You can either use the [GitBook Editor](https://github.com/GitbookIO/editor) or write the Mardown directly in your favorite editor. If you are going to add Chapters or Articles manually, make sure to include them in the file SUMMARY.md.
 
 If you want to convert HTML documentation to Markdown, you can for example use the online tool http://heckyesmarkdown.com/
+
+## Compiling
+
+To compile the HTML version of the documentation, use this command:
+```
+gitbook build . --title="Kimai Documentation" --output=/tmp/html/ --github=kimai/kimai
+```
