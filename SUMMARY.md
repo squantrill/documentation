@@ -1,12 +1,12 @@
 # Summary
 
-* [Installation](Installation.md)
-    * [Updates](Installation/Updates.md)
-* [Using Kimai](Using-Kimai.md)
-* [Developer](Developer.md)
-    * [Introduction](Developer/Introduction.md)
-    * [Translations](Developer/Translations.md)
-    * [Invoice templates](Developer/Invoice-templates.md)
-    * [Documentation](Developer/Documentation.md)
+* [Installation](installation/README.md)
+    * [Updates](installation/updates.md)
+* [Using Kimai](manual/README.md)
+* [Developer](developer/README.md)
+    * [Introduction](developer/introduction.md)
+    * [Translations](developer/translations.md)
+    * [Invoice templates](developer/invoice-templates.md)
+    * [Documentation](developer/documentation.md)
 * [FAQ](FAQ.md)
 
