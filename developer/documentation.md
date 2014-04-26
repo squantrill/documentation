@@ -15,5 +15,6 @@ If you want to convert HTML documentation to Markdown, you can for example use t
 
 To compile the HTML version of the documentation, use this command:
 ```
-gitbook build . --title="Kimai Documentation" --output=/tmp/html/ --github=kimai/kimai
+gitbook build . --title="Kimai Documentation" --github=kimai/kimai
 ```
+Output can be found in the _book/ folder. Team member can use the [build.sh](https://github.com/kimai/documentation/blob/master/build.sh) file to create a new book version and commit it directly (it will be published directly).
