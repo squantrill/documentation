@@ -16,3 +16,5 @@ git add .
 git commit -am "updated book"
 git push git@github.com:kimai/documentation gh-pages --force
 
+cd ..
+rm -rf _book
