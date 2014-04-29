@@ -7,9 +7,11 @@ Our repository for the documentation is located at:
 
 We use Markdown to write the documentation and the great [GitbookIO](https://github.com/GitbookIO) tools to write and publish it.
 
-You can either use the [GitBook Editor](https://github.com/GitbookIO/editor) or write the Mardown directly in your favorite editor. If you are going to add Chapters or Articles manually, make sure to include them in the file SUMMARY.md.
+You can either use the [GitBook Editor](https://github.com/GitbookIO/editor) or write the Mardown directly in your favorite editor.
+If you are going to add Chapters or Articles manually, make sure to include them in the file SUMMARY.md.
 
-If you want to convert HTML documentation to Markdown, you can for example use the online tool http://heckyesmarkdown.com/
+If you want to convert HTML documentation to Markdown, you can for example use the online tool [heckyesmarkdown.com](http://heckyesmarkdown.com/)
+or [to-markdown.js](http://domchristie.github.io/to-markdown/)
 
 ## Compiling
 
@@ -17,4 +19,6 @@ To compile the HTML version of the documentation, use this command:
 ```
 gitbook build . --title="Kimai Documentation" --github=kimai/kimai
 ```
-Output can be found in the _book/ folder. Team member can use the [build.sh](https://github.com/kimai/documentation/blob/master/build.sh) file to create a new book version and commit it directly (it will be published directly).
+Output can be found in the _book/ folder.
+Team member can use the [build.sh](https://github.com/kimai/documentation/blob/master/build.sh) file to create a new
+book version and commit it directly (it will be published directly).
