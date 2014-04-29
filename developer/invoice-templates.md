@@ -6,8 +6,7 @@ You can create templates Open Office documents or HTML pages.
 Existing templates are stored in the directory ```extensions/ki_invoice/invoices/```.
 
 There is a repository for sharing ready-to-use [Invoice templates](https://github.com/kimai/invoice-templates) where you
-can find the Debug HTML invoice as well. This file will help you in inspecting all possible variables, which can be helpful
-when developing your own template.
+can find a Debug HTML invoice, which will help you in inspecting all possible variables while developing your own template.
 
 ## Open Office templates
 

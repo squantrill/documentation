@@ -20,11 +20,13 @@ Der einfachste Weg ein Backup der Kimai Datenbank anzufertigen ist die Nutzung e
 
 Der Tag, an dem der Kimai-Kalender beginnt, lässt sich per Konfigurationsdatei nachträglich einstellen. Öffnen Sie dazu die Datei [kimai]/include/vars.php und verändern Sie folgenden Teil:
 
-`$kga['calender_start'] = "";&nbsp; ---&gt;&nbsp;&nbsp; ``$kga['calender_start'] = "31/12/2008";`
+Von ```$kga['calender_start'] = "";``` zu ```$kga['calender_start'] = "31/12/2008";```
 
+```
 // here you can set a custom start day for the date-picker.
 // if this is not set the day of the users first day in the system will be taken
 // Format: ... = "DD/MM/YYYY"
+```
 
 * * *
 

@@ -4,7 +4,7 @@ This document gives an overview of how Kimai works. It is intended for developer
 
 ## Glossary
 
-First there are some special words used in Kimai to describe things:
+First lets talk about the wording used in Kimai to describe things:
 
 #### Floater (or Dialog)
 
@@ -21,10 +21,6 @@ PHP files which handle AJAX calls.
 #### Extension
 
 Every tab you see in Kimai (like timesheet, export, admin panel) is an extension.
-
-#### Database Layer
-
-For every type of database connection (currently MySQL and PDO) a so called database layer is used. This is essentially a file which provides function to access the database.
 
 ## Folder structure
 
