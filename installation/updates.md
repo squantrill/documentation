@@ -1,4 +1,4 @@
-# Updates
+# Updating Kimai
 
 ## Step 1
 

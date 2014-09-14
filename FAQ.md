@@ -30,33 +30,9 @@ Von ```$kga['calender_start'] = "";``` zu ```$kga['calender_start'] = "31/12/200
 
 * * *
 
-**Ich kann nur einen Teil Der Zeiteinträge für einen Zeitraum sehen, aber nicht alle**
+**Ich kann nur einen Teil der Zeiteinträge für einen Zeitraum sehen, aber nicht alle**
 
-Die Anzahl der angezeigten Datensätze ist standardmäßig auf 100 limitiert. Sie können diese begrenzung unter Einstellungen (im Headerbereich neben dem Logout-Button) ändern.
-
-* * *
-
-**Beim Versuch Kimai 0.7.x zu installieren bekomme ich immer nur diese Fehlermeldung (ähnlich):**
-
-
-
-    Fatal error: Smarty error:
-    unable to write to $compile_dir '......../includes/smarty/templates_c'.
-    Be sure $compile_dir is writable by the web server user.
-    in /Users/th/Sites/kimai_0.7.11/includes/smarty/Smarty.class.php on line 1095
-
-
-Die Lösung ist einfach: Im Ordner kimai/includes/smarty/ finden Sie einen Ordner namens 'templates_c'. Setzen Sie diesen Ordner auf schreibbar. Außerdem bitte nicht vergessen die Datei 'logfile.txt' im Ordner temporary schreibbar zu machen, sonst gibt es im nächsten Schritt wieder einen Haufen Errors ;)
-
-Eine andere Fehlermeldung, die bei der Installation auftauchen kann, ist diese:
-
-
-
-    Fatal error: Call to a member function display() on a non-object in
-    /home/.../includes/connect.php on line 23
-
-
-Überprüfen Sie in diesem Fall, ob der ins Config-File Datenbank-Benutzer das Recht hat darauf zuzugreifen.
+Die Anzahl der angezeigten Datensätze ist standardmäßig auf 100 limitiert. Sie können diese Begrenzung unter Einstellungen (im Headerbereich neben dem Logout-Button) ändern.
 
 * * *
 
