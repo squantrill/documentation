@@ -1,6 +1,6 @@
 # FAQ
 
-Falls diese kurze FAQ Deine Frage nicht klären kann oder Du mehr wissen willst, dann komm einfach im [Support Forum](http://forum.kimai.org) vorbei.
+Falls diese kurze FAQ Deine Frage nicht klären kann oder Du mehr wissen willst, dann melde Dich bei GitHub und erstelle ein [Support Issue](https://github.com/kimai/kimai/issues).
 
 **Wann wird Kimai 1.0 endlich veröffentlicht?**
 
@@ -38,11 +38,11 @@ Die Anzahl der angezeigten Datensätze ist standardmäßig auf 100 limitiert. Si
 
 **Kann ich mich irgendwie am Projekt beteiligen?**
 
-Wenn Du interesse hast, Mitglied des Teams zu werden, melde Dich bitte zuerst im [Forum](http://forum.kimai.org) an damit wir uns kennenlernen können. Dank GitHub kannst Du uns jederzeit Pull-Requests zukommen lassen, auch Team-Mitglieder arbeiten so. Wenn Du viel beiträgst, nehmen wir Dich gerne in die Team Liste der offiziellen Contributor auf :)
+Wenn Du Interesse daran hast, Mitglied des Teams zu werden, melde Dich bitte zuerst bei GitHub an. Dank GitHub kannst Du uns jederzeit Pull-Requests zukommen lassen, auch die anderen Team-Mitglieder arbeiten so. Wenn Du viel beiträgst, nehmen wir Dich gerne in die Team Liste und die Liste der offiziellen Contributor auf :)
 
-Wir suchen dringend jemanden, der eine gute Doku schreiben kann. Gute Englischkenntnisse sind Voraussetzung. Am liebsten native.
+Wir suchen dringend jemanden, der gerne Dokumentation schreibt. Gute Englischkenntnisse sind Voraussetzung. Am liebsten native.
 
-Du bist super in CSS und brauchst unbedingt etwas, womit Du Langeweile todschlagen kannst? [Melde Dich!](http://forum.kimai.org) Wir freuen uns über Mitstreiter, die etwas von Frontend-Arbeiten verstehen.
+Du bist super in CSS und brauchst unbedingt etwas, womit Du Langeweile todschlagen kannst? Melde Dich, wir freuen uns über Mitstreiter die etwas von Frontend-Arbeiten verstehen.
 
 * * *
 
@@ -58,6 +58,6 @@ Natürlich ist geplant, dass Kimai in Zukunft selbst Reports erstellen kann. Abe
 
 **Ich möchte Beta-Tester werden. Wo bekomme ich die aktuelle Kimai-Version?**
 
-Der Beta-Test der neuesten Entwickler Version läuft kontinuierlich, unser Team ist zu klein um alles alleine zu schaffen. Bei Interesse meldet Euch bitte im Forum.
+Der Beta-Test der neuesten Entwickler Version läuft kontinuierlich, unser Team ist zu klein um alles alleine zu schaffen. Bei Interesse meldet Euch bitte bei GitHub.
 
 Du kannst entweder die Online Demo verwenden (siehe Webseite) oder noch besser: Du clonest Dir den aktuellen Master Branch von GitHub und testest diesen.

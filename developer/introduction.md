@@ -24,9 +24,9 @@ Every tab you see in Kimai (like timesheet, export, admin panel) is an extension
 
 ## Folder structure
 
-  * **compile** SMARTY places the compiled template files from the core here
+  * **~~compile~~** not used any longer, in previous versions we used Smarty as template engine, which saved compiled template files here
 
-  * **core**
+  * **core** these are the dispatcher files for kimai (entry points for web/mobile/api/floater)
 
   * **css** stylesheets which are independant of any skin
 

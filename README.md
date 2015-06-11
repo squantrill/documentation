@@ -1,8 +1,8 @@
-# Kimai Time-Tracking documentation
+# Kimai
 
 ![Header](https://raw.github.com/kimai/documentation/master/assets/intro.jpg)
 
-Welcome to our documentation ... which is unfortunately not very comprehensive yet.
+Welcome to the short documentation for the Kimai time-tracking application.
 
 We could use your help improving the documentation, [please contact us in the forum](http://forum.kimai.org/) if you want to help or read the Developer/Documentation section.
 

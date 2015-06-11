@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Installation](installation/README.md)
+   * [Updates](installation/updates.md)
 * [Using Kimai](manual/README.md)
    * [Timesheet](manual/timesheet.md)
    * [Administration](manual/administration.md)
@@ -17,9 +18,8 @@
    * [Translations](developer/translations.md)
    * [Invoice templates](developer/invoice-templates.md)
    * [Documentation](developer/documentation.md)
-   * [Extensions](developer/extensions.md)
-* [Administrator](administrator/README.md)
-   * [Updating Kimai](installation/updates.md)
    * [Authenticator](administrator/authenticator.md)
+   * [Extensions](developer/extensions.md)
+* [About](administrator/README.md)
 * [FAQ](FAQ.md)
 
