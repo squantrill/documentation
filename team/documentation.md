@@ -15,6 +15,11 @@ or [to-markdown.js](http://domchristie.github.io/to-markdown/)
 
 ## Compiling
 
+To use the gitbook command, install gitbook client via npm
+```
+npm install -g gitbook-cli
+```
+
 To compile the HTML version of the documentation, use this command:
 ```
 gitbook build . --title="Kimai Documentation" --github=kimai/kimai
