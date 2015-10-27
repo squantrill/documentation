@@ -8,7 +8,7 @@ Here you can add, modify and delete customers. If you do not set a password the 
 
 ### Projects
 
-Here you can add, modify and delete projects. Projects have to be aligned to a customer. Further you can set rates for this project if they differ from the standard rates (for details about rates see chapter [Rates](manual/rates.md)). If there is a budget it can be set here, too.
+Here you can add, modify and delete projects. Projects have to be aligned to a customer. Further you can set rates for this project if they differ from the standard rates (for details about rates see chapter [Rates](rates.md)). If there is a budget it can be set here, too.
 
 ### Tasks
 
