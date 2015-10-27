@@ -16,7 +16,6 @@ of ```[var.variablename]``` (the brackets are required).
 Variables you can use:
 
 * ```[var.project]``` Name of the project
-* ```[var.projectComment]``` Comment of the project
 * ```[var.beginDate]``` Selected starting date
 * ```[var.endDate]``` Selected end date
 * ```[var.invoiceID]``` Defined as "CUSTOMER-NAME - YEAR - MONTH". See /extensions/ki_invoice/print.php.
@@ -40,6 +39,15 @@ Customer related variables:
 * ```[var.customerEmail]``` Email address of the customer
 * ```[var.customerContact]``` Name of the customer's contact person
 * ```[var.customerVat]``` VAT of the customer
+
+Project related variables:
+
+An invoice can contain items for multiple projects. All projects are available from ```[var.projects]```.
+Elements of the array can be accessed using a zero-based index.
+For example the name of the first proejct is ```[var.projects.0.name]```.
+
+*  ```[var.projects.0.name]``` Name of the project
+*  ```[var.projects.0.comment]``` Comment of the project
 
 A row has these variables:
 
