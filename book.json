@@ -7,5 +7,10 @@
     "github": null,
     "githubHost": "https://github.com/",
     "plugins": [],
-    "pluginsConfig": {}
+    "pluginsConfig": {},
+    "links": {
+        "sidebar": {
+            "Kimai / Issues and Support": "https://github.com/kimai/kimai/issues"
+        }
+    }
 }
