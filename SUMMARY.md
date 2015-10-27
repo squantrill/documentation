@@ -22,4 +22,5 @@
    * [Extensions](developer/extensions.md)
 * [About](administrator/README.md)
 * [FAQ](FAQ.md)
+* [Team stuff](team/README.md)
 
