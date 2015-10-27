@@ -17,10 +17,9 @@
    * [Introduction](developer/introduction.md)
    * [Translations](developer/translations.md)
    * [Invoice templates](developer/invoice-templates.md)
-   * [Documentation](developer/documentation.md)
    * [Authenticator](administrator/authenticator.md)
    * [Extensions](developer/extensions.md)
 * [About](administrator/README.md)
 * [FAQ](FAQ.md)
 * [Team stuff](team/README.md)
-
+   * [Documentation](team/documentation.md)
