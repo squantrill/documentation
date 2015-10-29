@@ -15,6 +15,8 @@ For creating a new release, you need to have ant installed
 cd /tmp/
 git clone https://github.com/kimai/kimai.git kimai-master
 cd kimai-master
+git tag -a -f -m 'Tagged version x.x.x' x.x.x
+git push origin x.x.x
 ant release
 ```
 
