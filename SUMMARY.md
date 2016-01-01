@@ -6,6 +6,7 @@
 * [Using Kimai](manual/README.md)
    * [Timesheet](manual/timesheet.md)
    * [Administration](manual/administration.md)
+       * Customers
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)
