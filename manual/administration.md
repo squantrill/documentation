@@ -31,7 +31,19 @@ A user can only have one global role at a time but can belong to unlimited group
 
 ### Groups
 
-Here you can add, modify and delete groups and also define their leaders. Every group can have an unlimited amount of leaders.
+Here you can add, modify and delete groups and also define their memership role. Every group can have an unlimited amount of membership roles.
+
+### Global Roles
+
+User get their permissions from their global roles and from their group membership 
+
+### Membership roles
+
+The memership role defines with role a user ha insde of a group.
+
+### Status
+
+Status labels can be defined here.
 
 ### Advanced
 
