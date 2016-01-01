@@ -19,7 +19,13 @@ Here you can add, modify and delete tasks. A task has no relation to a customer 
 Here you can add, modify and delete users. 
 Users work with Kimai and add, change or modifiy data like their own time records or other data like customers, projects etc. depending on their roles and rights.
 
-https://github.com/actXc/documentation/assets/manual/user-general.jpg
+####Add Users
+
+Edit user / General 
+(https://github.com/actXc/documentation/assets/manual/user-general.jpg)
+
+Edit user / Groups
+(https://github.com/actXc/documentation/assets/manual/user-groups.jpg)
 
 A user can only have one global role at a time but can belong to unlimited groups. If you enter a valid email address you can send emails from your local account by clicking the mailer symbol.
 
