@@ -6,10 +6,10 @@
 * [Using Kimai](manual/README.md)
    * [Timesheet](manual/timesheet.md)
    * Tasks
-       * Users
    * [Administration](manual/administration.md)
        * Customers
        * Projects
+       * Users
        * Tasks
            * Users
    * [Budget](manual/budget.md)
