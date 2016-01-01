@@ -22,6 +22,7 @@ Users work with Kimai and add, change or modifiy data like their own time record
 ####Add Users
 
 Edit user / General 
+![](../assets/manual/user-general.jpg)
 (https://raw.githubusercontent.com/actXc/documentation/master/assets/manual/user-general.jpg)
 
 Edit user / Groups
@@ -39,7 +40,7 @@ User get their permissions from their global roles and from their group membersh
 
 ### Membership roles
 
-The memership role defines with role a user ha insde of a group.
+The membership role defines with role a user ha insde of a group.
 
 ### Status
 
