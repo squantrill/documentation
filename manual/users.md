@@ -12,11 +12,14 @@ Add a name for the new user and press
 
 ![](../assets/manual/user-general.jpg)
 
+A user can only have one global role at a time but can belong to unlimited groups. 
+
+If the password field is empty when pressing OK, the password will not change. If a password was never set for the user, a warning is displayed in the dialog box and in the user list. 
 
 Edit user > Groups
 
 ![](https://raw.githubusercontent.com/actXc/documentation/master/assets/manual/user-groups.jpg)
 
-A user can only have one global role at a time but can belong to unlimited groups. If you enter a valid email address you can send emails from your local account by clicking the mailer symbol.
+If you enter a valid email address you can send emails from your local account by clicking the mailer symbol.
 
 By default, a user is created in the group of its creator - wich is in most of the cases a user with admin roles. Make sure that you add and remove the correct roles for the new user. In most cases you need to remove the admin group.
