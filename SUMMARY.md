@@ -9,7 +9,7 @@
        * Customers
        * Projects
        * Tasks
-       * Users
+       * [Users](manual/users.md)
        * Groups
        * Global Roles
        * Membership Roles
