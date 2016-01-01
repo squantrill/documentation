@@ -31,7 +31,7 @@ A user can only have one global role at a time but can belong to unlimited group
 
 ### Groups
 
-Here you can add, modify and delete groups and also define their memership role. Every group can have an unlimited amount of membership roles.
+Here you can add, modify and delete groups and also define their membership role. Every group can have an unlimited amount of membership roles.
 
 ### Global Roles
 
