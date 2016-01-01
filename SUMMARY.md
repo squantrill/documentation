@@ -10,6 +10,7 @@
        * Projects
        * Tasks
        * Users
+       * Groups
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)
