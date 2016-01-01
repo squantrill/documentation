@@ -6,9 +6,9 @@
 * [Using Kimai](manual/README.md)
    * [Timesheet](manual/timesheet.md)
    * [Administration](manual/administration.md)
-       * Tasks
        * Customers
        * Projects
+       * Tasks
        * Users
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
