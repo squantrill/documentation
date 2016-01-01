@@ -15,6 +15,7 @@
        * Membership Roles
        * Status
        * Advanced
+       * Database
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)
