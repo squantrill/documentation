@@ -22,10 +22,10 @@ Users work with Kimai and add, change or modifiy data like their own time record
 ####Add Users
 
 Edit user / General 
-(https://github.com/actXc/documentation/assets/manual/user-general.jpg)
+(https://raw.githubusercontent.com/actXc/documentation/master/assets/manual/user-general.jpg)
 
 Edit user / Groups
-(https://github.com/actXc/documentation/assets/manual/user-groups.jpg)
+(https://raw.githubusercontent.com/actXc/documentation/master/assets/manual/user-groups.jpg)
 
 A user can only have one global role at a time but can belong to unlimited groups. If you enter a valid email address you can send emails from your local account by clicking the mailer symbol.
 
