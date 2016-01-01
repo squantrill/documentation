@@ -7,6 +7,7 @@
    * [Timesheet](manual/timesheet.md)
    * [Administration](manual/administration.md)
        * Customers
+       * Projects
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)
