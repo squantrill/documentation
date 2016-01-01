@@ -12,6 +12,7 @@
        * Users
        * Groups
        * Global Roles
+       * Membership Roles
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)
