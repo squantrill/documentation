@@ -11,6 +11,7 @@
        * Tasks
        * Users
        * Groups
+       * Global Roles
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)
