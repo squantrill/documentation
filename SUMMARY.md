@@ -14,6 +14,7 @@
        * Global Roles
        * Membership Roles
        * Status
+       * Advanced
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)
