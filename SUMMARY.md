@@ -9,9 +9,9 @@
    * [Administration](manual/administration.md)
        * Customers
        * Projects
-       * Users
        * Tasks
            * Users
+       * Users
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)
