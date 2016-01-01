@@ -9,8 +9,6 @@
        * Tasks
        * Customers
        * Projects
-       * Tasks
-           * Users
        * Users
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
