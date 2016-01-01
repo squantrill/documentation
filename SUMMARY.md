@@ -5,6 +5,8 @@
    * [Updates](installation/updates.md)
 * [Using Kimai](manual/README.md)
    * [Timesheet](manual/timesheet.md)
+   * Tasks
+       * Users
    * [Administration](manual/administration.md)
        * Customers
        * Projects
