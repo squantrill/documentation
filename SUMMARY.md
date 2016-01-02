@@ -6,16 +6,7 @@
 * [Using Kimai](manual/README.md)
    * [Timesheet](manual/timesheet.md)
    * [Administration](manual/administration.md)
-       * Customers
-       * Projects
-       * Tasks
-       * [Users](manual/users.md)
-       * Groups
-       * Global Roles
-       * Membership Roles
-       * Status
-       * Advanced
-       * Database
+       * [Users](manual/administration/users.md)
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)

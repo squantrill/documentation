@@ -4,10 +4,10 @@ Here you can add, change and delete users.
 
 Users work with the Kimai application and can add, change or delete data like their own time records. They can edit also other data like customers, projects e.g. depending on their roles and rights. The roles and rights are set using global roles, membership roles and groups.
 
-![](../assets/manual/user-list.jpg)
+![](../../assets/manual/user-list.jpg)
 
 
-####Add Users
+## Add Users
 
 Edit user >  General 
 
@@ -16,7 +16,7 @@ Add a name for the new user and press 'Add user'.
 To let the user reset the password, a email adresse is necessary.
 The Nickname is used 
 
-![](../assets/manual/user-general.jpg)
+![](../../assets/manual/user-general.jpg)
 
 A user can only have one global role at a time but can belong to unlimited groups. 
 
