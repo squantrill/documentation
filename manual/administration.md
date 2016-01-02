@@ -14,7 +14,7 @@ Here you can add, change and delete projects. Projects have to be aligned to a c
 
 Here you can add, change and delete tasks. A task has no relation to a customer or a project, but you can select which groups can use them. Additionally you can set rates here, too (for details about rates see chapter [Rates](rates.md)).
 
-## [Users](users.md)
+## [Users](administration/users.md)
 
 Here you can add, change and delete users. 
 Users work with Kimai and can add, change or delete data like their own time records and other data. What a user can do depends on roles and rights. The roles and rights are set using global roles, membership roles and groups.
