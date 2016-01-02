@@ -1,10 +1,21 @@
 # Summary
 
+* [Introduction](README.md)
 * [Installation](installation/README.md)
    * [Updates](installation/updates.md)
 * [Using Kimai](manual/README.md)
    * [Timesheet](manual/timesheet.md)
    * [Administration](manual/administration.md)
+       * Customers
+       * Projects
+       * Tasks
+       * [Users](manual/users.md)
+       * Groups
+       * Global Roles
+       * Membership Roles
+       * Status
+       * Advanced
+       * Database
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)
@@ -22,3 +33,4 @@
 * [FAQ](FAQ.md)
 * [Team stuff](team/README.md)
    * [Documentation](team/documentation.md)
+
