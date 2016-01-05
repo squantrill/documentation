@@ -2,7 +2,7 @@
 
 The following requirements must be met on the server installation:
 
-* PHP version 5.2 or above
+* PHP version 5.3 or above
 * MySQL libraries for PHP
 * one MySQL database (as Kimai supports table prefixes, this database may be shared with other tools)
 * FTP or shell access to set the correct filesystem permissions.
