@@ -1,10 +1,12 @@
 # Summary
 
+* [Introduction](README.md)
 * [Installation](installation/README.md)
    * [Updates](installation/updates.md)
 * [Using Kimai](manual/README.md)
    * [Timesheet](manual/timesheet.md)
    * [Administration](manual/administration.md)
+       * [Users](manual/administration/users.md)
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
    * [Export](manual/export.md)
@@ -22,3 +24,4 @@
 * [FAQ](FAQ.md)
 * [Team stuff](team/README.md)
    * [Documentation](team/documentation.md)
+

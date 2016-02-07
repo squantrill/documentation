@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gitbook build . --title="Kimai Documentation" --github=kimai/kimai
+gitbook build .
 cd _book
 git init
 git commit --allow-empty -m 'updated documentation'
