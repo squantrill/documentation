@@ -7,11 +7,11 @@ if you are a end-user of the Kimai time-tracking application.
 
 For creating a new release, you need to have ant installed
 
-- Change the version number in the following files and push them to master:
--- build.xml
--- composer.json
--- kimai.json
--- includes/version.php
+- Change the version number in the following files and push them to master: 
+    - build.xml
+    - composer.json 
+    - kimai.json
+    - includes/version.php
 - Switch to your bash (this script is for unix based systems)
 
 ```
