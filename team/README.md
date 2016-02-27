@@ -10,7 +10,6 @@ For creating a new release, you need to have ant installed
 - Change the version number in the following files and push them to master: 
     - build.xml
     - composer.json 
-    - kimai.json
     - includes/version.php
 - Switch to your bash (this script is for unix based systems)
 
@@ -27,7 +26,7 @@ ant release
 - Add one or two sentences and a link to this versions milestone with the "closed" filter
 - Publish the release draft
 - Publish a new blog post regarding this new release (see below)
-- Update https://github.com/kimai/kimai/blob/master/kimai.json and change the version number and news link, commit and push it to master (so the update check in Kimai administration will catch it as well)
+- Update [kimai.json](https://github.com/kimai/kimai/blob/master/kimai.json) and change the version number and news link, commit and push it to master (so the update check in Kimai administration will catch it as well)
 - Edit the GitHub release and add a link to the blog post
 - Let the rest of the team know and spread the word (Twitter, Facebook ...)
 
