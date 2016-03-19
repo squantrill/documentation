@@ -6,6 +6,7 @@
 * [Using Kimai](manual/README.md)
    * [Timesheet](manual/timesheet.md)
    * [Administration](manual/administration.md)
+       * [Projects](manual/administration/projects.md)
        * [Users](manual/administration/users.md)
    * [Budget](manual/budget.md)
    * [Expenses](manual/expenses.md)
@@ -25,4 +26,3 @@
 * [Team stuff](team/README.md)
    * [Contributing](team/contributing.md)
    * [Documentation](team/documentation.md)
-

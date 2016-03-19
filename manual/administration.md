@@ -6,9 +6,9 @@ In the admin panel you can do every administration that is necessary for the run
 
 Here you can add, change and delete customers. If you do not set a password the customer cannot login to Kimai. By selecting a group you enable all members of that group to see that customer. All fields except the customer name are optionally.
 
-## Projects
+## [Projects](administration/projects.md)
 
-Here you can add, change and delete projects. Projects have to be aligned to a customer. Further you can set rates for this project if they differ from the standard rates (for details about rates see chapter [Rates](rates.md)). If there is a budget it can be set here, too.
+Here you can add, change and delete projects. Projects have to be assigned to a customer. Further you can set rates for this project if they differ from the standard rates (for details about rates see chapter [Rates](rates.md)). If there is a budget it can be set here, too.
 
 ## Tasks
 

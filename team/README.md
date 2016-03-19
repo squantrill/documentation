@@ -13,11 +13,11 @@ For creating a new release, you need to have ant installed
 
 - Change the version number in the following files and push them to master: 
     - build.xml
-    - composer.json 
+    - composer.json
     - includes/version.php
 - Switch to your bash (this script is for unix based systems)
 
-```
+```bash
 cd /tmp/
 git clone https://github.com/kimai/kimai.git kimai-master
 cd kimai-master
