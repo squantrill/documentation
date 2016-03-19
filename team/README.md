@@ -3,6 +3,10 @@
 This part of the documentation is related to the Kimai development team, you can safely skip this part 
 if you are a end-user of the Kimai time-tracking application.
 
+## Developing for Kimai
+
+Please read [CONTRIBUTING](contributing.html).
+
 ## Creating a new release
 
 For creating a new release, you need to have ant installed
@@ -32,4 +36,8 @@ ant release
 
 ## How to publish a new blog article on the Kimai website
 
-Writing a new blog post is a simple as creating a new .md file in our [website repo](https://github.com/kimai/kimai.github.io) and pushing it to its gh-pages branch
+Writing a new blog post is a simple as:
+ 
+- Fork the [website repo](https://github.com/kimai/kimai.github.io) 
+- Create a new .md file in the _posts directory
+- Send a pull request

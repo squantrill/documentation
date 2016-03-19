@@ -65,22 +65,21 @@ If you get a blank page or an error similar to the following
 
 ```
 Fatal error: Uncaught exception 'tinyDocException'  with message 'the PHP global variable named 'c<text:span' does not  exist or is not set yet.' in  /var/www/kimai/extensions/ki_invoice/TinyButStrong/tinyDoc.class.php:997  Stack trace:
-#0  /var/www/kimai/extensions/ki_invoice/TinyButStrong/tinyButStrong.class.php(1870):  tinyDoc->meth_Misc_Alert(Object(clsTbsLocator), 'the PHP global  ...', true)
-#1  /var/www/kimai/extensions/ki_invoice/TinyButStrong/tinyButStrong.class.php(669):  clsTinyButStrong->meth_Merge_AutoVar('<?xml version="...', true)
-#2  /var/www/kimai/extensions/ki_invoice/TinyButStrong/tinyDoc.class.php(269):  clsTinyButStrong->Show(0)
-#3  /var/www/kimai/extensions/ki_invoice/print.php(204):  tinyDoc->saveXml()
-#4 {main} thrown in  /var/www/kimai/extensions/ki_invoice/TinyButStrong/tinyDoc.class.php on  line 997
+#0 extensions/ki_invoice/TinyButStrong/tinyButStrong.class.php(1870):  tinyDoc->meth_Misc_Alert(Object(clsTbsLocator), 'the PHP global  ...', true)
+#1 extensions/ki_invoice/TinyButStrong/tinyButStrong.class.php(669):  clsTinyButStrong->meth_Merge_AutoVar('<?xml version="...', true)
+#2 extensions/ki_invoice/TinyButStrong/tinyDoc.class.php(269):  clsTinyButStrong->Show(0)
+#3 extensions/ki_invoice/print.php(204):  tinyDoc->saveXml()
+#4 {main} thrown in extensions/ki_invoice/TinyButStrong/tinyDoc.class.php on  line 997
 ```
 the variable name has a style applied. Select the (or all) variable name(s) and reset them to the default format.
 Then you can format the whole variable name as you want it.
 
 ## HTML templates
 
-Using HTML templates is possible since version 0.9.3 (which is currently the DEV version), so if you would like to use that
-feature, you need to use the current [GitHub master](https://github.com/kimai/manuals/zipball/master).
+Using HTML templates is possible since version 0.9.3.
 
 If you want to create a new HTML template, you have to crete a new subdirectory in ```extensions/ki_invoice/invoices/``` with
 an ```index.html``` or ```index.phtml``` file inside.
 
-Lets do that with an example: For a "ACME" HTML template you would create: ```extensions/ki_invoice/invoices/ACME/index.html```
-
+For example, creating the HTML template called "ACME" you would create: ```extensions/ki_invoice/invoices/ACME/index.html```.
+The easiest way is to duplicate the directory "my_company" and rename the copy.
