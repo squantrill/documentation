@@ -24,5 +24,4 @@
 * [About](administrator/README.md)
 * [FAQ](FAQ.md)
 * [Team stuff](team/README.md)
-   * [Contributing](team/contributing.md)
    * [Documentation](team/documentation.md)

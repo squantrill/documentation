@@ -5,7 +5,7 @@ if you are a end-user of the Kimai time-tracking application.
 
 ## Developing for Kimai
 
-Please read [CONTRIBUTING](contributing.html).
+Please read our [CONTRIBUTING GUIDELINES](https://github.com/kimai/kimai/blob/master/.github/CONTRIBUTING.md) directly at Github.
 
 ## Creating a new release
 
