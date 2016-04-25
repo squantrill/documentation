@@ -10,7 +10,7 @@ rm build.sh
 
 echo '# GitHub Pages for Kimai docu
 
-Please visit http://kimai.github.io/documentation/ for the online documentation' > README.md
+Please visit http://www.kimai.org/documentation/ for the online documentation' > README.md
 
 git add .
 git commit -am "updated book"
