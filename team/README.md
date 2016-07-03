@@ -15,6 +15,9 @@ For creating a new release, you need to have ant installed
     - build.xml
     - composer.json
     - includes/version.php
+        - set the version
+        - ALWAYS increase the revision, otherwise people using the develop branch will be stuck in the updater(!)
+        - set the release status (dev for pre-release versions. empty for release)
 - Switch to your bash (this script is for unix based systems)
 
 ```bash
@@ -23,7 +26,7 @@ git clone https://github.com/kimai/kimai.git kimai-master
 cd kimai-master
 git tag -a -f -m 'Tagged version x.x.x' x.x.x
 git push origin x.x.x
-ant release
+ant build
 ```
 
 - Now open GitHub, [create a new "Release"](https://github.com/kimai/kimai/releases) as Draft and upload the release ZIP from /tmp/kimai/kimai_xxx.zip to this draft
