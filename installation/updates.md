@@ -21,5 +21,11 @@ Visit your Kimai installation with your web browser and the auto update process 
 
 A new version updates the database automatically. Before that a backup of your data will be created. Normally you'll not even notice this process. If anything goes wrong during the database-update you can recover the data via phpMyAdmin.
 
+## Step 3
 
+After you have successfully updated, you can safely remove the **installer** folder, so that no one can perform the installation again.
+For Linux that could be:
 
+```
+rm -rf installer
+```
