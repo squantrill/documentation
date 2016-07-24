@@ -2,11 +2,22 @@
 
 By default kimai uses its internal user management, where users and passwords are stored in the Kimai database.
 
-But there are more authenticator (contributed by the community), which can be used to connect to existing user repositories.
+But there are more authenticators, which can be used to connect to existing user repositories.
 
 ## HTTP
 
-No documentation available ...
+* Change ``$authenticator = "http";`` in ``includes/autoconf.php``
+* create .htaccess
+
+```
+AuthType Basic
+AuthName "kimai"
+AuthUserFile  /absolute/path/to/.htpasswd
+Require valid-user
+```
+
+* [Create .htpasswd file](http://www.htaccesstools.com/htpasswd-generator/)
+* Login with ``http://admin:changeme@kimai.localhost/index.php``
 
 ## LDAP
 
@@ -21,9 +32,9 @@ To use the advanced LDAP-Authentication in kimai you will have to do one of the 
 * create a new class "Kimai_Auth_Yourname" (where "yourname has to be lowercase ecept for the first character) that extends Kiami_Auth_Ldapadvanced and overwrite the properties of Kimai_Auth_Ldapadvanced with your data or
 * Simply configure the stuff in the Kimai_Auth_Ldapadvanced class by overwriting the defaults for the properties
 
-Then you will have to add the following line to your ```includes/autofonf.php```-file:
+Then you will have to add the following line to your ```includes/autofonf.php``` file:
 
-   $authenticator = 'yourname';
+	$authenticator = 'yourname';
 
 *yourname* is the last part of the classname, this time completely in lowercase. If you overwrote the properties from Kimai_Auth_Ldapadvanced it is simply ```ldapadvanced```
 
@@ -45,7 +56,3 @@ Then you will have to add the following line to your ```includes/autofonf.php```
 * **autocreateUsers:** Shall uses authenticated via LDAP be created automatically in kimai. If set to false the users have to be added manually to kimai and only password-verification will be handled via LDAP
 * **defaultGlobalRoleName:** The name of the default role newly created users will be associated with
 * **defaultGroupMemberships:** An array of group=>role mappings the user shall also be associated with
-
-
-
-
