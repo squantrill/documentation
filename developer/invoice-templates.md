@@ -15,15 +15,20 @@ of ```[var.variablename]``` (the brackets are required).
 
 Variables you can use:
 
-* ```[var.project]``` Name of the project
+* ```[var.today]``` Current Date
+* ```[var.ttltime]``` Total amount of hours
+* ```[var.invoiceID]``` Defined as "CUSTOMER-NAME - YEAR - MONTH". See /extensions/ki_invoice/print.php. 
 * ```[var.beginDate]``` Selected starting date
 * ```[var.endDate]``` Selected end date
-* ```[var.invoiceID]``` Defined as "CUSTOMER-NAME - YEAR - MONTH". See /extensions/ki_invoice/print.php.
-* ```[var.today]``` Current Date
 * ```[var.dueDate]``` Defined as Current Date %2B 1 Month. See /extensions/ki_invoice/print.php.
-* ```[var.total]``` Total without VAT
-* ```[var.gtotal]``` Total including VAT
-* ```[var.ttltime]``` Total amount of hours
+* ```[var.currencySign]``` Currency sign (e.g. €)  
+* ```[var.currencyName]``` Currency name (e.g. Eur)
+* ```[var.invoiceDate]``` Timestamp when this invoice was generated
+* ```[var.dateFormat]``` Date format for formatting the invoiceDate (Kimai config: date_format_2)
+* ```[var.vatRate]``` VAT rate
+* ```[var.vat]``` Total VAT sum
+* ```[var.amount]``` Total sum without VAT
+* ```[var.total]``` Total sum including VAT
 
 Customer related variables:
 
@@ -44,7 +49,7 @@ Project related variables:
 
 An invoice can contain items for multiple projects. All projects are available from ```[var.projects]```.
 Elements of the array can be accessed using a zero-based index.
-For example the name of the first proejct is ```[var.projects.0.name]```.
+For example the name of the first project is ```[var.projects.0.name]```.
 
 *  ```[var.projects.0.name]``` Name of the project
 *  ```[var.projects.0.comment]``` Comment of the project
