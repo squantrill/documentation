@@ -1,7 +1,6 @@
 # Authenticator
 
 By default kimai uses its internal user management, where users and passwords are stored in the Kimai database.
-
 But there are more authenticators, which can be used to connect to existing user repositories.
 
 ## Configuration
@@ -13,10 +12,11 @@ $authenticator = 'kimai';
 ```
 
 *kimai* is the last part of the classname without the namespace and the first character in lowercase. 
-For example "ldap" comes from Kimai_Auth_Ldap: remove Kimai_Auth_ and lowercase the first character in the word "ldap".
+For example "ldap" comes from Kimai\_Auth\_Ldap: remove Kimai\_Auth\_ and lowercase the first character in the word "ldap".
 
 If the used authenticator supports configuration parameters, you can set those with the file ``includes/auth.php`` 
 (supported since Kimai > 1.0.1). 
+
 Therefor you need to create the file ``includes/auth.php`` with the content:
 
 ```php
@@ -27,7 +27,7 @@ return array(
 );
 ```
 
-and then set the parameters according to the authenticator documentation below ('key_1' and 'key_2' can be safely 
+Set the parameters according to the authenticator documentation below ('key_1' and 'key_2' can be safely 
 removed, they are just examples for the structure of the file).
 
 ## Kimai
@@ -36,7 +36,11 @@ The built-in authenticator, using the Kimai database.
 
 * Change ``$authenticator = "kimai";`` in ``includes/autoconf.php``
 
+It has no configuration parameters and is working out-of-the-box.
+
 ## HTTP
+
+A Basic-Auth authenticator
 
 * Change ``$authenticator = "http";`` in ``includes/autoconf.php``
 * create .htaccess
@@ -48,17 +52,18 @@ AuthUserFile  /absolute/path/to/.htpasswd
 Require valid-user
 ```
 
-* [Create .htpasswd file](http://www.htaccesstools.com/htpasswd-generator/)
+* Create a .htpasswd file [online generator](http://www.htaccesstools.com/htpasswd-generator/)
 * Login with ``http://admin:changeme@kimai.localhost/index.php``
 
 ### Configuration-parameters
 
 * **HTAUTH_ALLOW_AUTOLOGIN:** Set true to allow web server authorized automatic logins
-* **HTAUTH_FORCE_USERNAME_LOWERCASE:** Set true to force username to lower case before searching Kimai database
-* **HTAUTH_USER_AUTOCREATE:** Set true to create Kimai user for web server authorized users not in database
+* **HTAUTH_FORCE_USERNAME_LOWERCASE:** Set true to search for lower-case usernames only
+* **HTAUTH_USER_AUTOCREATE:** Set true to create Kimai user for web server authorized users
 * **HTAUTH_PHP_AUTH_USER:** Check for PHP_AUTH_USER server variable
 * **HTAUTH_REMOTE_USER:** Check for REMOTE_USER server variable
 * **HTAUTH_REDIRECT_REMOTE_USER:** Check for REDIRECT_REMOTE_USER server variable
+
 
 Default settings and full example for ``includes/auth.php``:
 
@@ -83,11 +88,12 @@ Basic LDAP authenticator.
 ### Configuration-parameters
 
 * **LDAP_SERVER:** URL of your LDAP-Server
-* **LDAP_FORCE_USERNAME_LOWERCASE:** Case-insensitivity of some Servers may confuse the case-sensitive-accounting system
-* **LDAP_USERNAME_PREFIX:** Prepends to username
-* **LDAP_USERNAME_POSTFIX:** Appends to username
+* **LDAP_FORCE_USERNAME_LOWERCASE:** Case-insensitivity of some server may confuse the case-sensitive-accounting system
+* **LDAP_USERNAME_PREFIX:** Prefix for user LDAP query
+* **LDAP_USERNAME_POSTFIX:** Postfix for user LDAP query
 * **LDAP_LOCAL_ACCOUNTS:** Accounts that should be locally verified
-* **LDAP_USER_AUTOCREATE:** Automatically create a user in kimai if the login is successful
+* **LDAP_USER_AUTOCREATE:** Automatically create a user in Kimai after successful login 
+
 
 Default settings and full example for ``includes/auth.php``:
 
@@ -130,6 +136,7 @@ An advanced LDAP authenticator, that allows further configuration options.
 
 Default settings and full example for ``includes/auth.php``:
 
+
 ```php
 <?php
 return array(
@@ -162,6 +169,7 @@ Kimai support authentication with Microsofts Active Directory through LDAP.
 
 * **enhancedIdentityPrivacy:** Supports the "Enhanced Identity Privacy" option, see [Microsoft Technet](https://technet.microsoft.com/en-us/library/f351e0e3-6c78-49dc-9b0f-2b24e1b7411c)
 
+
 Default settings and full example for ``includes/auth.php``:
 
 ```php
@@ -171,12 +179,12 @@ return array(
 );
 ```
 
-As this class is a subclass of Ldapadvanced (see above), you can set all Configuration-parameters from there as well, for example the host:
+As this class is a subclass of the LDAP-Advanced authenticator (see above), you can set all Configuration-parameters from there as well, for example the host:
 
 ```php
 <?php
 return array(
-    'enhancedIdentityPrivacy' => 'false',
     'host' => 'ldap://localhost',
+    'enhancedIdentityPrivacy' => 'false',
 );
 ```
