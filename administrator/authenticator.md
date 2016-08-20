@@ -4,6 +4,38 @@ By default kimai uses its internal user management, where users and passwords ar
 
 But there are more authenticators, which can be used to connect to existing user repositories.
 
+## Configuration
+
+The authenticator that will be used is configured in ``includes/auth.php`` within the key ``$authenticator``. 
+
+```php
+$authenticator = 'kimai';
+```
+
+*kimai* is the last part of the classname without the namespace and the first character in lowercase. 
+For example "ldap" comes from Kimai_Auth_Ldap: remove Kimai_Auth_ and lowercase the first character in the word "ldap".
+
+If the used authenticator supports configuration parameters, you can set those with the file ``includes/auth.php`` 
+(supported since Kimai > 1.0.1). 
+Therefor you need to create the file ``includes/auth.php`` with the content:
+
+```php
+<?php
+return array(
+    'key_1' => 'value',
+    'key_2' => 'value',
+);
+```
+
+and then set the parameters according to the authenticator documentation below ('key_1' and 'key_2' can be safely 
+removed, they are just examples for the structure of the file).
+
+## Kimai
+
+The built-in authenticator, using the Kimai database.
+
+* Change ``$authenticator = "kimai";`` in ``includes/autoconf.php``
+
 ## HTTP
 
 * Change ``$authenticator = "http";`` in ``includes/autoconf.php``
@@ -19,26 +51,63 @@ Require valid-user
 * [Create .htpasswd file](http://www.htaccesstools.com/htpasswd-generator/)
 * Login with ``http://admin:changeme@kimai.localhost/index.php``
 
+### Configuration-parameters
+
+* **HTAUTH_ALLOW_AUTOLOGIN:** Set true to allow web server authorized automatic logins
+* **HTAUTH_FORCE_USERNAME_LOWERCASE:** Set true to force username to lower case before searching Kimai database
+* **HTAUTH_USER_AUTOCREATE:** Set true to create Kimai user for web server authorized users not in database
+* **HTAUTH_PHP_AUTH_USER:** Check for PHP_AUTH_USER server variable
+* **HTAUTH_REMOTE_USER:** Check for REMOTE_USER server variable
+* **HTAUTH_REDIRECT_REMOTE_USER:** Check for REDIRECT_REMOTE_USER server variable
+
+Default settings and full example for ``includes/auth.php``:
+
+```php
+<?php
+return array(
+    'HTAUTH_ALLOW_AUTOLOGIN' => true,
+    'HTAUTH_FORCE_USERNAME_LOWERCASE' => false,
+    'HTAUTH_USER_AUTOCREATE' => false,
+    'HTAUTH_PHP_AUTH_USER' => false,
+    'HTAUTH_REMOTE_USER' => true,
+    'HTAUTH_REDIRECT_REMOTE_USER' => false,
+);
+```
+
 ## LDAP
 
-No documentation available ...
+Basic LDAP authenticator.
+
+* Change ``$authenticator = "ldap";`` in ``includes/autoconf.php``
+
+### Configuration-parameters
+
+* **LDAP_SERVER:** URL of your LDAP-Server
+* **LDAP_FORCE_USERNAME_LOWERCASE:** Case-insensitivity of some Servers may confuse the case-sensitive-accounting system
+* **LDAP_USERNAME_PREFIX:** Prepends to username
+* **LDAP_USERNAME_POSTFIX:** Appends to username
+* **LDAP_LOCAL_ACCOUNTS:** Accounts that should be locally verified
+* **LDAP_USER_AUTOCREATE:** Automatically create a user in kimai if the login is successful
+
+Default settings and full example for ``includes/auth.php``:
+
+```php
+<?php
+return array(
+    'LDAP_SERVER' => 'ldap://localhost',
+    'LDAP_FORCE_USERNAME_LOWERCASE' => true,
+    'LDAP_USERNAME_PREFIX' => 'cn=',
+    'LDAP_USERNAME_POSTFIX' => ',dc=example,dc=com',
+    'LDAP_LOCAL_ACCOUNTS' => array('admin'),
+    'LDAP_USER_AUTOCREATE' => true,
+);
+```
 
 ## Advanced LDAP-Authentication
 
-### Usage
+An advanced LDAP authenticator, that allows further configuration options.
 
-To use the advanced LDAP-Authentication in kimai you will have to do one of the following:
-
-* create a new class "Kimai_Auth_Yourname" (where "yourname has to be lowercase ecept for the first character) that extends Kiami_Auth_Ldapadvanced and overwrite the properties of Kimai_Auth_Ldapadvanced with your data or
-* Simply configure the stuff in the Kimai_Auth_Ldapadvanced class by overwriting the defaults for the properties
-
-Then you will have to change the following line in your ```includes/autoconf.php``` file:
-
-```php
-$authenticator = 'yourname';
-```
-
-*yourname* is the last part of the classname, this time completely in lowercase. If you overwrote the properties from Kimai_Auth_Ldapadvanced it is simply ```ldapadvanced```
+* Change ``$authenticator = "ldapadvanced";`` in ``includes/autoconf.php``
 
 ### Configuration-parameters
 
@@ -58,3 +127,56 @@ $authenticator = 'yourname';
 * **autocreateUsers:** Shall uses authenticated via LDAP be created automatically in kimai. If set to false the users have to be added manually to kimai and only password-verification will be handled via LDAP
 * **defaultGlobalRoleName:** The name of the default role newly created users will be associated with
 * **defaultGroupMemberships:** An array of group=>role mappings the user shall also be associated with
+
+Default settings and full example for ``includes/auth.php``:
+
+```php
+<?php
+return array(
+    'host' => 'ldap://localhost',
+    'bindDN' => '',
+    'bindPW' => '',
+    'searchBase' => 'dc=example,c=org',
+    'userFilter' => 'uid=%s',
+    'groupFilter' => 'memberUid=%1$s',
+    'usernameAttribute' => 'uid',
+    'commonNameAttribute' => 'cn',
+    'groupidAttribute' => 'cn',
+    'mailAttribute' => 'mail',
+    'allowedGroupIds' => array('kimai-access'),
+    'forceLowercase' => true,
+    'nonLdapAcounts' => array('admin'),
+    'autocreateUsers' => true,
+    'defaultGlobalRoleName' => 'User',
+    'defaultGroupMemberships' => array('Users' => 'User'),
+);
+```
+
+## Active Directory
+
+Kimai support authentication with Microsofts Active Directory through LDAP. 
+
+* Change ``$authenticator = "activeDirectory";`` in ``includes/autoconf.php``
+
+### Configuration-parameters
+
+* **enhancedIdentityPrivacy:** Supports the "Enhanced Identity Privacy" option, see [Microsoft Technet](https://technet.microsoft.com/en-us/library/f351e0e3-6c78-49dc-9b0f-2b24e1b7411c)
+
+Default settings and full example for ``includes/auth.php``:
+
+```php
+<?php
+return array(
+    'enhancedIdentityPrivacy' => 'false',
+);
+```
+
+As this class is a subclass of Ldapadvanced (see above), you can set all Configuration-parameters from there as well, for example the host:
+
+```php
+<?php
+return array(
+    'enhancedIdentityPrivacy' => 'false',
+    'host' => 'ldap://localhost',
+);
+```
