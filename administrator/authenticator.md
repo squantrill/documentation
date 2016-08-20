@@ -30,6 +30,9 @@ return array(
 Set the parameters according to the authenticator documentation below ('key_1' and 'key_2' can be safely 
 removed, they are just examples for the structure of the file).
 
+If you use Kimai 1.0.1 or lower, you have to set these Configuration-parameters in the PHP files directly, for 
+example in the [LDAP class here](https://github.com/kimai/kimai/blob/master/libraries/Kimai/Auth/Ldap.php).
+
 ## Kimai
 
 The built-in authenticator, using the Kimai database.
