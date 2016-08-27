@@ -8,7 +8,7 @@ You need to backup both: your **database** and your file system, especially the 
 
 ## Step 2
 
-To install a new version just replace the entire directory with the new package **EXCEPT** the file **autoconf.php** which can be found inside the /includes folder.
+To install a new version just replace the entire directory with the new package and **KEEP** the file **autoconf.php** which can be found inside the /includes folder.
 
 Additionally you have to set write permissions to the **temporary/** folder.
 
@@ -23,28 +23,20 @@ It would be even better, if you give writing permission to your PHP or Webserver
 
 ## Step 3
 
-Remove the **installer** folder, so no one can open the installer.
-For Linux that could be:
-
-```
-rm -rf installer
-```
-
-## Step 4
-
-Finally, ready for update:
+Ready for update:
 
 Visit your Kimai installation with your web browser and the auto update process will perform all necessary tasks
 (eg. http://www.example.com/kimai/index.php - do **NOT** execute the installer!).
 
 A new version updates the database automatically. Before that a backup of your data will be created. Normally you'll not even notice this process. If anything goes wrong during the database-update you can recover the data via phpMyAdmin.
 
-## Step 5
 
-If the update was successful, finalize everything by removing the **updater** folder.
+## Step 4
+
+If the update was successful, finalize everything by removing the **updater** and **installer** folder.
 For Linux that could be:
 
 ```
 rm -rf updater
+rm -rf installer
 ```
-
